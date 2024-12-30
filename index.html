@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Subscription</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+        
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .hero {
+            background: url('https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .hero h2 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin: 0 0 30px;
+        }
+        
+        .hero a {
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        
+        .features {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+        
+        .features .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .feature {
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            font-size: 16px;
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .features .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Daily Gazette</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Stay Informed, Stay Ahead</h2>
+        <p>Subscribe to our newspaper for daily insights and updates.</p>
+        <a href="#pricing">Subscribe Now</a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="feature">
+                <h3>Breaking News</h3>
+                <p>Get the latest updates on current events as they happen.</p>
+            </div>
+            <div class="feature">
+                <h3>In-Depth Analysis</h3>
+                <p>Understand the stories that shape your world.</p>
+            </div>
+            <div class="feature">
+                <h3>Exclusive Content</h3>
+                <p>Access interviews and articles you won’t find anywhere else.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Daily Gazette. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
